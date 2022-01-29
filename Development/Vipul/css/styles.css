@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+#main-container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+section.one{
+    background-image: linear-gradient(-337deg, #ffffff, 60%, #DCBFFC);
+}
+nav{
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+nav #brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-family: 'Outfit', sans-serif;
+}
+nav #brand img{
+    width: 1.8rem;
+    margin: 0px 10px;
+}
+nav .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav .menu li{
+    padding: 1rem;
+    transition: all 0.2s ease-out;
+}
+nav .menu > li:hover{
+    color: rgb(0, 34, 128);
+    border-bottom: 2px solid purple;
+    padding: 0 8px; 
+    border-radius: 20px;
+}
+nav .menu li a{
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav .menu-btn i{
+    color: black;
+    cursor: pointer;
+    padding: 1rem 1.5rem 0 0;
+    font-size: 30px;
+    display: none;
+}
+#click{
+    display: none;
+}
+.top-container .main-heading{
+    display: flex;
+}
+.top-container .main-heading .photo-selection{
+    padding: 0rem 6rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.top-container .main-heading .gallery{
+    width: 50%;
+}
+.top-container .main-heading img{
+    width: 100%;
+}
+.top-container .main-heading #title{
+    font-size: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:  rgb(0, 34, 128);
+}
+.top-container .main-heading .photo-selection p{
+    color: grey;
+}
+.top-container .main-heading .photo-selection button{
+    width: 8rem;
+    background: none;
+    padding: 2% 0%;
+    margin-top: 2%;
+    border-radius: 5px;
+    font-family: monospace;
+    border: 3px solid rgba(100, 100, 100, 0.103);
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    
+}
+.top-container .main-heading .photo-selection button:hover{
+    background-color: rgb(221, 186, 247);
+}
+#livechat {
+    background: rgb(70, 70, 197);
+    padding: 0.8rem 0rem;
+    width: 10rem;
+    color: white; 
+    border-radius: 5px;
+    font-family: monospace;
+    border: 3px solid rgba(100, 100, 100, 0.103);
+    cursor: pointer;
+    position: absolute;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    z-index: 2;
+}
+#livechat:hover {
+    opacity: 0.8;
+}
+
+/* Upgrade Plan  */
+
+section.two{
+    background-image: linear-gradient( #ffffff,20%, #DFD4B9);
+    display: flex;
+    justify-content: center;
+}
+section.two .upgrade-plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 5%;
+}
+section.two .upgrade-plans .plan-video{
+    width: 50%;
+}
+section.two .upgrade-plans .plan-video video{
+    border-radius: 1.5rem;
+    border: 1.2rem solid black;
+}
+section.two .upgrade-plans .plan{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+section.two .upgrade-plans .plan h4{
+    width: 35rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 3rem;
+}
+section.two .upgrade-plans .plan p{
+    line-height: 1.5;
+    width: 30rem;
+    font-family: monospace;
+    font-size: 1.7rem;
+}
+section.two .upgrade-plans .plan button{
+    background: none;
+    width: 9rem;
+    padding: 1.5% 1%;
+    margin-top: 2%;
+    border-radius: 5px;
+    font-family: monospace;
+    border: 3px solid rgba(100, 100, 100, 0.103);
+    cursor: pointer;
+    transition: 0.2s ease-in;  
+}
+section.two .upgrade-plans .plan button a{
+    text-decoration: none;
+    color: #337ab7;
+    font-family: 'Poppins', sans-serif;
+}
+section.two .upgrade-plans .plan button:hover{
+    background-color: rgb(221, 186, 247);
+}
+
+/* Testimnials */
+
+section.three{
+    background-image: linear-gradient( #ffffff,50%, #DFD4B9);
+}
+
+
+/* Media Queries */
+
+@media (max-width:1300px) {
+    .top-container .main-heading #title{
+        font-size: 3rem;
+    }
+    section.two .upgrade-plans{
+        flex-direction: column;
+    }
+    section.two .upgrade-plans .plan-video{
+        width: 100%;
+    }
+    section.two .upgrade-plans .plan-video video{
+        border-radius: 1.5rem;
+        border: 1.2rem solid black;
+        margin-bottom: 1.5rem;
+    }
+    section.two .upgrade-plans .plan{
+        width: 100%;
+    }
+    section.two .upgrade-plans .plan button{
+
+    }
+}
+@media (max-width:1200px){
+    .carousel-item .inside-testimonials .card{
+        margin: 3rem 1rem !important;
+    }
+}
+@media (max-width:1024px){
+    #main-container{
+        scroll-snap-type:none;
+    }
+    section{
+        height: 100% !important;
+    }
+    .top-container .main-heading .photo-selection{
+        padding: 0rem 1.5rem;
+    }
+    .carousel-inner .class-holder{
+        /* flex-direction: column !important; */
+        /* align-items: center; */
+    }
+}
+@media (max-width:950px){
+    .top-container .main-heading{
+        flex-direction: column;
+    }
+    .top-container .main-heading .photo-selection{
+        padding: 0rem 3rem;
+        width: 100%;
+    }
+    .top-container .main-heading .gallery{
+        margin: 1.5rem 0rem 0rem 1.5rem;
+        width: 35%;
+    }
+    .top-container .main-heading .gallery img{
+        width: ;
+    }
+}
+@media(max-width:768px){
+    /* navbar media queries */
+    nav ul{
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        padding: 1rem 0rem;
+        background-color: #EEEEEE;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    nav ul li{
+        margin-top: 8px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav .menu-btn i{
+        display: block;
+    }
+}

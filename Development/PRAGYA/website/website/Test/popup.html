@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./css/header.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+ 
+</script>
+
+<!--Css for popup start here-->
+<style>
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.mainframe{
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+
+.search{
+    position: absolute;
+    right: 100px;
+    bottom: 400px;
+}
+
+.btn {
+  border: none;
+  background-color: #add8e6;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* On mouse-over */
+.btn:hover {background: #0000FF;}
+
+.next {color: #000000;}
+</style>
+<!--Css for popup end Here-->
+
+</head>
+<body>
+	<div class ="header">
+	  <div class="navbar">
+		
+		<ul>
+			<img class="logo" src="./img/logo1.png">
+			<li><a href="page1.html">About us</li></a>
+			<li><a href="profile.html">Contact us</li></a>
+		
+			
+			
+		</ul>
+	  </div>
+      
+
+	</div>
+
+	
+	<!-- Navbar items -->
+	
+		
+		<!-- search bar right align -->
+		<div class="search"  margin-left: 10vw; >
+			<form action="#">
+				<input type="text" 
+					placeholder=" Search"
+					name="search">
+				<button>
+					<i class="fa fa-search"
+						style="font-size: 18px;" >
+					</i>
+				</button>
+			</form>
+		</div>
+	</div>
+
+	
+	<!-- logo with tag -->
+	<div class="content">
+
+<!--Code For Button and Popup box-->        
+
+<script>
+	function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");  
+}
+</script>	
+		
+<div class="popup" id="popup-1">
+	<div class="overlay"></div>
+	<div class="content">
+		<div class="close-btn" onclick="togglePopup()">&times;</div>
+		<h1>Hello !</h1>
+		<p>Choose the file location</p>
+        <label for="location">Choose the file location:</label>
+        <select name="location" id="location">
+            <option value="cloud">Photoshooto cloud</option>
+            <option value="document">Local document</option>
+        </select><br><br>
+        <a href="./inserted.html"><button class="btn next">Next</button></a>
+	</div>
+</div>
+
+<div class="mainframe">
+<button onclick="togglePopup()">Import</button>
+</div>
+<footer class="main-container">
+    <div class="container flex-div1">
+        <!-- ----------------------First Column Start------------------------------ -->
+        
+        <div class="first-column">
+            <div class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis asperiores
+                voluptatibus porro nostrum dolore </div>
+            <div class="logo-icon">
+                <div class="inner-logo flex-div">
+                    <img src="./img/Logo.jfif">
+                    <div class="icon-name">
+                        <h3>Photoshooto</h3>
+                        <a href="">
+                            <p>Photoshooto.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------First Column End------------------------------ -->
+        <!-- /* ----------------------Second Column Start------------------------------ */ -->
+
+        <div class="second-column">
+            <div class="text2">
+                <p class="para">Subscribe to our news letter</p>
+            </div>
+            <div class="email-input ">
+                <form action="" class="flex-div">
+                    <input type="email" placeholder="Enter your Email" required>
+                    <button type="submit">Ok</button>
+                </form>
+            </div>
+        </div>
+    
+
+        <!-- /* ----------------------Second Column End------------------------------ */ -->
+
+        <!-- /* ----------------------Third Column Start------------------------------ */ -->
+        <div class="third-column">
+            <div class="text3">
+                <p class="para">Learn More</p>
+            </div>
+            <div class="link1">
+                <ul class="para">
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /* ----------------------Third Column End------------------------------ */ -->
+        <!-- /* ----------------------Fourth Column Start------------------------------ */ -->
+        <div class="third-column">
+            <div class="text3">
+                <p class="para">Company</p>
+            </div>
+            <div class="link1">
+                <ul class="para">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact US</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /* ----------------------Fourth Column End------------------------------ */ -->
+        <!-- /* ----------------------fifth Column Start------------------------------ */ -->
+        <div class="third-column">
+            <div class="text3">
+                <p class="para">Connect with us</p>
+            </div>
+            <div class="link1">
+                <ul class="para">
+                    <li><a href=""><i class="fab fa-facebook"></i> &nbsp; Facebook</a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i>  &nbsp;Twitter</a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i> &nbsp; Instagram</a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></i> &nbsp;Linked in</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /* ----------------------Fifth Column End------------------------------ */ -->
+        <!-- /* ----------------------Sixth Column Start------------------------------ */ -->
+        <div class="sixth-column">
+            <a href=""><i class="fas fa-map-marker-alt"></i> Banglore, Jaynagar</a>
+            <p>+91 9054588444</p>
+            <a href="mailto:photoshooto@gmail.com" class="mail">photoshooto@gmail.com</a>
+        </div>
+
+
+        <!-- /* ----------------------Sixth Column End------------------------------ */ -->
+
+    
+
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/f8e6a66ec7.js" crossorigin="anonymous"></script>
+</html>

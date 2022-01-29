@@ -1,0 +1,25 @@
+.login-class{
+    
+    width:40%;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 1px 1px 4px;
+    height:350px;
+    border-radius: 4%;
+    padding-top: 3%;
+}
+#login-head{
+    
+    margin-left: 30%;
+    color:gray;
+    font-size: 20px;
+    margin-bottom: 5%;
+    
+
+}
+.form-class{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}

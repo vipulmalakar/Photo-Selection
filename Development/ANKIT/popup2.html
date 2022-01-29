@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+	<title>alert</title>
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="./css/style.css">
+   	<link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="./images/Logo.jfif" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./css/popup2.css">
+		<link rel="shortcut icon" href="./images/Logo.jfif" type="image/x-icon">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+      <style type="text/css">
+         @font-face{
+            src: url('./font/Junction-regular');
+            font-family: 'Junction';
+         }
+
+         body{
+            font-family: 'Junction';
+         }
+      </style>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		function alert(){
+
+		}
+	</script> -->
+</head>
+<body>
+	<div class="bg-image"></div>
+	<div class="main-container">
+	<div class="modal-bg" ng-app="BlankApp" ng-cloak>
+         <div class="modal-bg-header">
+            <div class="modal-heading-report-builder"> Select what type of pictures you want! <span class="modal-cross-icon"><i class="fa fa-times" aria-hidden="true"></i> </span>  </div>
+         </div>
+         <div class="modal-padding" layout="column" layout-padding>
+            <md-radio-group ng-model="data.group1">
+               <md-radio-button value="Apple" class="md-primary">Compressed version</md-radio-button>
+               <md-radio-button value="Banana"> Regular Version </md-radio-button>
+               <!--md-radio-button value="Mango">Remove selected colomns</md-radio-button>
+            </md-radio-group -->
+            <div flex-gt-sm="50">
+               <!--md-checkbox md-no-ink aria-label="Checkbox No Ink" ng-model="data.cb5" class="md-primary">
+                  Select all coloumns
+               </md-checkbox-->
+            </div>
+         </div>
+         <div class="modal-bg-footer">
+            <a href="page1.html">
+            <button class="btn btn-submit" id="submit">Submit</button>
+         </div>
+      </div>
+    </div>
+
+	<!-- <header>
+		<ul>
+      <img class="logo" src="logo.png">
+      <li><a href="#">About us</li></a>
+      <li><a href="#">Contact us</li></a>
+    
+      <li style="margin-left: 700px;"><a href="#"><img src="noti.png" class="noti"></a></li>
+    </ul>
+	</header> -->
+
+
+</div>
+</div>
+<!-- Angular Material requires Angular.js Libraries -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+      <!-- Angular Material Library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+      <!-- Your application bootstrap  -->
+      <script type="text/javascript">    
+         /**
+          * You must include the dependency on 'ngMaterial' 
+          */
+         angular.module('BlankApp', ['ngMaterial']);
+      </script>
+
+</body>
+</html>

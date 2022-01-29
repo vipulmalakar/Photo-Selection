@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+    
+}
+.flex-div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.para{
+    font-size: 11px;
+    font-weight: 600;
+}
+/* <!-- ----------------------First Column Start------------------------------ --> */
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+}
+.text1{
+    font-size: 11px;
+    font-weight: 700;
+}
+.container{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* border: 1px solid #000; */
+    background: linear-gradient(45deg, white, #d9d7ff);
+    padding: 2% 2%;
+    justify-content: center;
+}
+.first-column{
+    width: 20%;
+}
+.first-column .inner-logo img{
+    width: 35px;
+    border-radius: 50%;
+}
+.first-column .text1{
+    margin-bottom: 25px;
+}
+.first-column .inner-logo .icon-name p{
+    font-size: 13px;
+    color: #0000ff;
+}
+/* <!-- ----------------------First Column End------------------------------ --> */
+
+/* <!-- ----------------------Second Column Start------------------------------ --> */
+.second-column{
+    width: 14%;
+    margin-right: 40px;
+}
+.second-column .text2 .para{
+    font-size: 11px;
+    font-weight: 600;
+}
+.second-column .text2{
+    margin-bottom: 10px;
+}
+.email-input input{
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 8px;
+}
+.email-input button{
+    padding: 2px 5px;
+    margin-left: 5px;
+}
+/* <!-- ----------------------Second Column End------------------------------ --> */
+
+/* <!-- ----------------------Third Column Start------------------------------ --> */
+.third-column{
+    width: 14%;
+}
+.third-column .text3{
+    margin-bottom: 10px;
+}
+.link1 ul{
+    list-style: none;
+}
+/* <!-- ----------------------Third Column End------------------------------ --> */
+
+.mail{
+    color: blue;
+    transition: all 0.3s ease-in-out;
+}
+.mail:hover{
+    color: red;
+}
+a{
+    transition: all 0.3s ease-in-out;
+}
+a:hover{
+    color: red;
+}
