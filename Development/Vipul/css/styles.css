@@ -84,7 +84,7 @@ nav .menu-btn i{
 .top-container .main-heading .gallery{
     width: 50%;
 }
-.top-container .main-heading img{
+.top-container .main-heading .gallery img{
     width: 100%;
 }
 .top-container .main-heading #title{
@@ -191,8 +191,51 @@ section.two .upgrade-plans .plan button:hover{
 section.three{
     background-image: linear-gradient( #ffffff,50%, #DFD4B9);
 }
-
-
+section.three h1{
+    text-align:center;
+    margin-top: 4rem;
+    color: rgb(0, 34, 128);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+}
+section.three .card-container{
+    margin: 0% 8%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+section.three .card-container .card{
+    border-radius: 16px;
+    margin: 0 3%;
+    padding: 2rem;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    box-shadow: 1px 1px 10px black;
+}
+section.three .card-container .card img{
+    width: 200px;
+    border-radius: 50%;
+}
+section.three .card-container .card .card-heading{
+   font-size: 1.5rem;
+   font-family: 'Baloo Bhaijaan 2', cursive;;
+}
+section.three .card-container .card .card-text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 /* Media Queries */
 
 @media (max-width:1300px) {
@@ -206,15 +249,11 @@ section.three{
         width: 100%;
     }
     section.two .upgrade-plans .plan-video video{
-        border-radius: 1.5rem;
-        border: 1.2rem solid black;
-        margin-bottom: 1.5rem;
+        height: 230px;
+        width: 379px;
     }
     section.two .upgrade-plans .plan{
         width: 100%;
-    }
-    section.two .upgrade-plans .plan button{
-
     }
 }
 @media (max-width:1200px){
@@ -232,10 +271,6 @@ section.three{
     .top-container .main-heading .photo-selection{
         padding: 0rem 1.5rem;
     }
-    .carousel-inner .class-holder{
-        /* flex-direction: column !important; */
-        /* align-items: center; */
-    }
 }
 @media (max-width:950px){
     .top-container .main-heading{
@@ -247,10 +282,6 @@ section.three{
     }
     .top-container .main-heading .gallery{
         margin: 1.5rem 0rem 0rem 1.5rem;
-        width: 35%;
-    }
-    .top-container .main-heading .gallery img{
-        width: ;
     }
 }
 @media(max-width:768px){
@@ -278,5 +309,27 @@ section.three{
     }
     nav .menu-btn i{
         display: block;
+    }
+    .top-container .main-heading .gallery{
+        width: 70%;
+    }
+}
+@media(max-width:450px){
+    .top-container .main-heading .gallery{
+        width: 80%;
+    }
+    section.two .upgrade-plans .plan-video video{
+        height: 185.5px;
+        width: 300px;
+    }
+    section.two .upgrade-plans .plan h4{
+        width: 22rem;
+        font-size: 2.5rem;
+    }
+    section.two .upgrade-plans .plan p{
+        line-height: 1.5;
+        width: 18rem;
+        font-family: monospace;
+        font-size: 1.3rem;
     }
 }
